@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const config = require("config");
-console.log("config==============", config.get("keyName"));.
+console.log("config==============", config.get("keyName"));
 
 app.get("/", (req, res, next) => {
     res.send("Server works")
