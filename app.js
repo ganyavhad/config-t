@@ -4,7 +4,7 @@ const config = require("config");
 if (config.has("keyname")) {
     console.log("config==============", config.get("keyName"));
 }
-console.log(config.has("keyname"), process.env.NODE_ENV)
+console.log(config.has("keyname"), process.env)
 app.get("/", (req, res, next) => {
     res.send("Server works")
 })
